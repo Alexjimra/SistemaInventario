@@ -1,0 +1,12 @@
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net6.0\SistemaInventario.Modelos.deps.json
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net6.0\SistemaInventario.Modelos.dll
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\bin\Debug\net6.0\SistemaInventario.Modelos.pdb
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.csproj.AssemblyReference.cache
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.AssemblyInfoInputs.cache
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.AssemblyInfo.cs
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.csproj.CoreCompileInputs.cache
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.dll
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\refint\SistemaInventario.Modelos.dll
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\SistemaInventario.Modelos.pdb
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario.Modelos\obj\Debug\net6.0\ref\SistemaInventario.Modelos.dll
