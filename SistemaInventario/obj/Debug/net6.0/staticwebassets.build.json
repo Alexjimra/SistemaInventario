@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wGLftJV4PTFIpzW21a4AcGVC+5o/FnqxmMnaKeOcSzQ=",
+  "Hash": "2HzAdB4bcwS7ipGt4JiY9CWBofDMYdOC86jaR6LVcsE=",
   "Source": "SistemaInventario",
   "BasePath": "_content/SistemaInventario",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\bodega.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\categoria.js",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "js/categoria.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\categoria.js"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\site.js",
