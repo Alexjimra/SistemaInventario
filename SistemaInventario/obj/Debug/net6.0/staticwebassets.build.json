@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "2HzAdB4bcwS7ipGt4JiY9CWBofDMYdOC86jaR6LVcsE=",
+  "Hash": "0FGAM64t1ADNgjyx7IqdQyRE3SD/hwieX19w259OCTI=",
   "Source": "SistemaInventario",
   "BasePath": "_content/SistemaInventario",
   "Mode": "Default",
@@ -1137,6 +1137,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\categoria.js"
+    },
+    {
+      "Identity": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\marca.js",
+      "SourceId": "SistemaInventario",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\wwwroot\\",
+      "BasePath": "_content/SistemaInventario",
+      "RelativePath": "js/marca.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\marca.js"
     },
     {
       "Identity": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\wwwroot\\js\\site.js",

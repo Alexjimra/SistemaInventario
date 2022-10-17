@@ -18,7 +18,8 @@ namespace SistemaInventario.AccesoDatos.Data
         }
 
         public DbSet<Bodega> Bodega { get; set; } = null!;
-        public DbSet<Categoria> Categoria { get; set; }
+        public DbSet<Categoria> Categoria { get; set; } 
+        public DbSet<Marca> Marca { get; set; }
      
     }
 }
