@@ -15,7 +15,7 @@ namespace SistemaInventario.Modelos
 
         [Required]
         [MaxLength(50)]
-        [Display(Name = "Nombre categoria")]
+        [Display(Name = "Nombre marca")]
         public string? Nombre { get; set; }
 
         [Required]

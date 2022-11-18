@@ -6,7 +6,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace SistemaInventario.AccesoDatos.Repositorio
 {
@@ -55,7 +54,7 @@ namespace SistemaInventario.AccesoDatos.Repositorio
 
         }
 
-        public IEnumerable<T> ObtenerTodos(Expression<Func<T, bool>> filter = null!, Func<IQueryable<T>, IOrderedQueryable<T>> orderBy = null!, string incluirPropiedades = null!)
+        public IEnumerable<T> ObtenerTodos(Expression<Func<T, bool>>? filter = null, Func<IQueryable<T>, IOrderedQueryable<T>>? orderBy = null, string? incluirPropiedades = null)
         {
             IQueryable<T> query = dbSet;
 

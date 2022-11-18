@@ -1,5 +1,6 @@
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\appsettings.json
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\libman.json
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.staticwebassets.runtime.json
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.exe
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\SistemaInventario.deps.json
@@ -302,6 +303,8 @@ C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\Sis
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
@@ -352,6 +355,7 @@ C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\Sis
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\NuGet.Common.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\NuGet.Configuration.dll
 C:\Users\Admin\OneDrive - cross\Escritorio\Nemus\Proyectos\SistemaInventario\SistemaInventario\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
