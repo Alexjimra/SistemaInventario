@@ -25,7 +25,6 @@ namespace SistemaInventario.AccesoDatos.Repositorio
             Marca = new MarcaRepositorio(_db);
             Producto = new ProductoRepositorio(_db);
             UsuarioAplicacion = new UsuarioAplicacionRepositorio(_db);
-
         }
 
         public void Guardar()

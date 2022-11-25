@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.AccesoDatos.Data;
@@ -14,8 +15,15 @@ builder.Services.AddDbContext<SistemaInventarioContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<SistemaInventarioContext>();
+builder.Services.AddDataProtection()
+    .PersistKeysToFileSystem(new DirectoryInfo(Path.GetTempPath()));
+
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+//                                                            .AddEntityFrameworkStores<SistemaInventarioContext>();
+
+builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
+                                .AddEntityFrameworkStores<SistemaInventarioContext>();
+
 
 builder.Services.AddScoped<IUnidadTrabajo, UnidadTrabajo>();
 
