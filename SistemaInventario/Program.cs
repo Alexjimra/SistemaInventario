@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.DataProtection;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.EntityFrameworkCore;
 using SistemaInventario.AccesoDatos.Data;
 using SistemaInventario.AccesoDatos.Repositorio;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
+using SistemaInventario.Utilidades;
 using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -21,9 +23,11 @@ builder.Services.AddDataProtection()
 //builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
 //                                                            .AddEntityFrameworkStores<SistemaInventarioContext>();
 
-builder.Services.AddIdentity<IdentityUser, IdentityRole>().AddDefaultTokenProviders()
+builder.Services.AddIdentity<IdentityUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                                .AddDefaultTokenProviders()
                                 .AddEntityFrameworkStores<SistemaInventarioContext>();
 
+builder.Services.AddSingleton<IEmailSender, EmailSender>();
 
 builder.Services.AddScoped<IUnidadTrabajo, UnidadTrabajo>();
 
@@ -31,6 +35,7 @@ builder.Services.AddControllers().AddJsonOptions(x =>
                 x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
+builder.Services.AddRazorPages();
 
 builder.Services.AddControllersWithViews();
 
@@ -59,6 +64,7 @@ app.UseAuthorization();
 app.MapControllerRoute(
     name: "default",
     pattern: "{area=Inventario}/{controller=Home}/{action=Index}/{id?}");
+
 app.MapRazorPages();
 
 app.Run();

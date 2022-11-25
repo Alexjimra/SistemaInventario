@@ -7,7 +7,7 @@ using SistemaInventario.Modelos;
 
 namespace SistemaInventario.AccesoDatos.Data
 {
-    public partial class SistemaInventarioContext : DbContext
+    public partial class SistemaInventarioContext : IdentityDbContext
     {
         //public SistemaInventarioContext()
         //{

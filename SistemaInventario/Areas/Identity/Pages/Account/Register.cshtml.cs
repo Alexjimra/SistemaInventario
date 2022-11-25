@@ -17,6 +17,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.WebUtilities;
 using Microsoft.Extensions.Logging;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
@@ -33,10 +34,10 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
         private readonly IUserEmailStore<IdentityUser> _emailStore;
         private readonly ILogger<RegisterModel> _logger;
         private readonly IEmailSender _emailSender;
-        private readonly IUnidadTrabajo _unidadTrabajo;
 
         // Roles del sistema
         private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IUnidadTrabajo _unidadTrabajo;
 
         public RegisterModel(
             UserManager<IdentityUser> userManager,
@@ -127,12 +128,23 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
             public string Ciudad { get; set; }
             public string Pais { get; set; }
             public string Rol { get; set; }
+            public IEnumerable<SelectListItem> ListaRol { get; set; }
         }
 
 
         public async Task OnGetAsync(string returnUrl = null)
         {
             ReturnUrl = returnUrl;
+
+            Input = new InputModel()
+            {
+                ListaRol = _roleManager.Roles.Where(r => r.Name != DS.Rol_Cliente).Select(n => n.Name).Select(l => new SelectListItem
+                {
+                    Text = l,
+                    Value = l
+                })
+            };
+
             ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
         }
 
@@ -152,6 +164,7 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
                     Direccion = Input.Direccion,
                     Ciudad = Input.Ciudad,
                     Pais = Input.Pais,
+                    PhoneNumber = Input.PhoneNumber,
                     Rol = Input.Rol
                 };
 
@@ -184,7 +197,16 @@ namespace SistemaInventario.Areas.Identity.Pages.Account
                         await _roleManager.CreateAsync(new IdentityRole(DS.Rol_Venta));
                     }
 
-                    await _userManager.AddToRoleAsync(user, DS.Rol_Admin);
+                    //await _userManager.AddToRoleAsync(user, DS.Rol_Admin);if(){
+                    if (user.Rol == null)
+                    {
+                        await _userManager.AddToRoleAsync(user, DS.Rol_Cliente);
+                    } else
+                    {
+                        await _userManager.AddToRoleAsync(user, user.Rol);
+                    }
+
+
 
 
                     //var userId = await _userManager.GetUserIdAsync(user);
