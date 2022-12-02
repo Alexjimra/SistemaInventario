@@ -28,68 +28,65 @@ function loadDataTable() {
             }
         },
         "ajax": {
-            "url": "/Admin/Categoria/obtenerTodos"
+            "url": "/Admin/Usuario/obtenerTodos"
         },
         "columns": [
-            { "data": "userName", "width": "20%" },
-            { "data": "nombre", "width": "20%" },
-            { "data": "apellido", "width": "20%" },
-            { "data": "email", "width": "20%" },
-            { "data": "phoneNumber", "width": "20%" },
-            { "data": "rol", "width": "20%" }
+            { "data": "userName", "width": "10%" },
+            { "data": "nombres", "width": "10%" },
+            { "data": "apellidos", "width": "10%" },
+            { "data": "email", "width": "15%" },
+            { "data": "phoneNumber", "width": "10%" },
+            { "data": "rol", "width": "15%" },
 
-            //{
-            //    "data": "estado",
-            //    "render": function (data) {
-            //        if (data == true) {
-            //            return "Activo";
-            //        }
-            //        else {
-            //            return "Inactivo";
-            //        }
-            //    }, "width": "20%"
-            //},
-            //{
-            //    "data": "id",
-            //    "render": function (data) {
-            //        return `
-            //            <div class="text-center">
-            //                <a href="/Admin/Categoria/Upsert/${data}" class="btn btn-success text-white" style="cursor:pointer">
-            //                    <i class="fas fa-edit"></i>
-            //                </a>
-            //                <a onclick=Delete("/Admin/Categoria/Delete/${data}") class="btn btn-danger text-white" style="cursor:pointer">
-            //                    <i class="fas fa-trash"></i>
-            //                </a>
-            //            </div>
-            //            `;
-            //    }, "width": "20%"
-            //}
+            {
+                "data": {
+                    id:"id", lockoutEnd:"lockoutEnd"
+                },
+                "render": function (data) {
+
+                    var hoy = new Date().getTime();
+                    var bloqueo = new Date(data.lockoutEnd).getTime();
+                    if (bloqueo > hoy) {
+
+                        // Ususuario está bloqueado
+                        return `
+                        <div class="text-center">
+                            <a onclick=BloquearDesbloquear('${data.id}') class="btn btn-danger text-white" style="cursor:pointer; width:150px;">
+                                <i class="fas fa-lock-open"></i> Desbloquear
+                            </a>
+                        </div>
+                        `;
+                    }
+                    else {
+                        return `
+                        <div class="text-center">
+                            <a onclick=BloquearDesbloquear('${data.id}') class="btn btn-success text-white" style="cursor:pointer; width:150px;">
+                                <i class="fas fa-lock"></i> Bloquear
+                            </a>
+                        </div>
+                        `;
+                    }
+                   
+                }, "width": "20%"
+            }
         ]
     });
 }
 
-//function Delete(url) {
-//    swal({
-//        title: "Esta seguro que quiere eliminar la categoria?",
-//        text: "Este registro no se podrá recuperar",
-//        icon: "warning",
-//        buttons: true,
-//        dangerMode: true,
-
-//    }).then((borrar) => {
-//        if (borrar) {
-//            $.ajax({
-//                type: "Delete",
-//                url: url,
-//                success: function (data) {
-//                    if (data.success) {
-//                        toastr.success(data.message);
-//                        datatable.ajax.reload();
-//                    } else {
-//                        toastr.error(data.message);
-//                    }
-//                }
-//            });
-//        }
-//    });
-//}
+function BloquearDesbloquear(id) {
+   
+    $.ajax({
+        type: "POST",
+        url: '/Admin/Usuario/BloquearDesbloquear',
+        data: JSON.stringify(id),
+        contentType: "application/json",
+        success: function (data) {
+            if (data.success) {
+                toastr.success(data.message);
+                datatable.ajax.reload();
+            } else {
+                toastr.error(data.message);
+            }
+        }
+    });
+}
