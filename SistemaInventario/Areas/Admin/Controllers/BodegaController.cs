@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.DiaSymReader;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
 using SistemaInventario.Modelos;
+using SistemaInventario.Utilidades;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = DS.Rol_Admin)]
     public class BodegaController : Controller
     {
         private readonly IUnidadTrabajo _unidadTrabajo;

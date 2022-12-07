@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "80E5KXbsCV7ds0/YUY9iv5IXmJSaSaUXtgy0Dii5M3RN2+mUM2hRRhF50teu+NdXWeDpCnCUFoeg/og7lBbJxQ==",
+  "dgSpecHash": "yEMhOXDh5gYgnxNXN9UddmV7ypdujQ/7H7zOwLjTehlg2KOLQmH0YgmQYcGw4UQUnWfIOAGOka2TR64TPD3CFg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\OneDrive - cross\\Escritorio\\Nemus\\Proyectos\\SistemaInventario\\SistemaInventario\\SistemaInventario.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Admin\\.nuget\\packages\\bootstrap\\5.2.1\\bootstrap.5.2.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",

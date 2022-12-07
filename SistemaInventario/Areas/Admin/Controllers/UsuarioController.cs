@@ -1,11 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.DotNet.Scaffolding.Shared.Messaging;
 using SistemaInventario.AccesoDatos.Data;
+using SistemaInventario.Utilidades;
+using System.Data;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = DS.Rol_Admin)]
     public class UsuarioController : Controller
     {
         private readonly SistemaInventarioContext _db;

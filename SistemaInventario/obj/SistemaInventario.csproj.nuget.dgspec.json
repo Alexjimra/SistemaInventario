@@ -299,10 +299,6 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.10, )"
-            },
-            "bootstrap": {
-              "target": "Package",
-              "version": "[5.2.1, )"
             }
           },
           "imports": [

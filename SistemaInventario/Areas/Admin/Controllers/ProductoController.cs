@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Routing.Constraints;
 using Microsoft.DiaSymReader;
@@ -7,10 +8,13 @@ using NuGet.Packaging.Signing;
 using SistemaInventario.AccesoDatos.Repositorio.IRepositorio;
 using SistemaInventario.Modelos;
 using SistemaInventario.Modelos.ViewModels;
+using SistemaInventario.Utilidades;
+using System.Data;
 
 namespace SistemaInventario.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Roles = DS.Rol_Admin + "," + DS.Rol_Inventario)]
     public class ProductoController : Controller
     {
         private readonly IUnidadTrabajo _unidadTrabajo;
